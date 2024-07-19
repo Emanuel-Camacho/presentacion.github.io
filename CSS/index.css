@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Verdana, Calibri;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------- HEADER --------------------*/
+
+header {
+    margin: 0px;
+    display: flex;
+    font-size: 20px;
+
+    background-image: url('../IMG/fondo-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: lightgray;
+    height: 500px;
+    border-bottom: 1px solid black;
+}
+
+header div:nth-child(1) {
+    margin-right: auto;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+
+header div:nth-child(1):hover {
+    background-color: rgba(145, 145, 145, 0.2);
+}
+
+header div {
+    height: fit-content;
+    margin: 50px;
+}
+
+header a {
+    color: black;
+}
+
+.header-left {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-left a {
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.header-left a:hover {
+    background-color: rgba(145, 145, 145, 0.4);
+    color: white;
+}
+
+/*-------------------- SOBRE MI --------------------*/
+
+/* ----- personal ----- */
+#sobre-mi {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#sobre-mi div {
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.descripcion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.descripcion p {
+    align-self: center;
+    text-align: center;
+}
+
+
+#sobre-mi .foto-perfil {
+    /* hacer que la imagen no se distorcione al hacer zoom */
+    width: 40%;
+    background-image: url('../IMG/perfil-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ----- estudios ----- */
+.estudios {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estudios div {
+    
+}
+
+
+/*-------------------- PROYECTOS --------------------*/
+
+
+/*-------------------- CONTATO --------------------*/
