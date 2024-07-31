@@ -23,8 +23,8 @@
         </div>
         <div class="header-left">
             <a href="#sobre-mi">Sobre mi</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </header>
 
@@ -40,14 +40,69 @@
         </div>
 
         <div class="estudios">
-            <h2>estudios</h2>
+            <h2>Estudios</h2>
             <div>
                 <h3>UTN</h3>
-                <p>palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras </p>
+                <p>palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras
+                    palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras
+                    palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras palabras
+                    palabras palabras palabras palabras palabras palabras </p>
             </div>
         </div>
 
         <div class=""></div>
+    </section>
+
+    <section id="proyectos">
+
+    </section>
+
+    <section id="contacto">
+
+        <div class="email">
+            <h4>Email:</h4>
+            <p>emanueltcamacho@gmail.com</p>
+        </div>
+
+        <div class="github">
+            <h4>GitHub</h4>
+            <a href="https://github.com/Emanuel-Camacho" target="_blank">https://github.com/Emanuel-Camacho</a>
+        </div>
+
+        <div class="formulario">
+            <h4>Contacto Directo:</h4>
+            <form id="form">
+                <div class="field" style="display: none;">
+                    <label for="to_name">to_name</label>
+                    <input type="text" name="to_name" id="to_name">
+                </div>
+                <div class="field">
+                    <label for="from_name">Nombre del Emisor:</label>
+                    <input required type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="message">Mensaje:</label>
+                    <input required type="text" name="message" id="message">
+                </div>
+                <div class="field">
+                    <label for="reply_to">responde a:</label>
+                    <input required type="email" name="reply_to" id="reply_to">
+                </div>
+
+                <div class="botones">
+                    <input type="button" id="limpiarBtn" value="Limpiar">
+                    <input type="submit" id="button" value="Enviar">
+                </div>
+            </form>
+
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('JAG4iez87oYS3mCH5')
+            </script>
+        </div>
+
     </section>
 </body>
 
