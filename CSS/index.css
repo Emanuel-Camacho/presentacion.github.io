@@ -49,41 +49,82 @@ header a {
     color: black;
 }
 
-.header-left {
+.header-right {
     width: 40%;
     display: flex;
     justify-content: space-around;
 }
 
-.header-left a {
+.header-right a {
     padding: 5px;
     border-radius: 2px;
 }
 
-.header-left a:hover {
+.header-right a:hover {
     background-color: rgba(59, 59, 59, 0.412);
     color: white;
 }
 
-/*-------------------- SOBRE MI --------------------*/
+/*-------------------- BOTONES --------------------*/
+/* dejar o quitar */
+#idioma {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
 
-/* ----- personal ----- */
+.btn-idioma {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn-idioma:hover {
+    color: darkblue;
+}
+
+button {
+    all: unset;
+    /* Resetea todos los estilos aplicados por defecto */
+    display: inline;
+    /* Hace que el botón se comporte como un elemento en línea */
+    cursor: pointer;
+    /* Asegura que el cursor cambie a una mano cuando se pase sobre el botón */
+}
+
+/*-------------------- SOBRE MI --------------------*/
 #sobre-mi {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-top: 100px;
 }
 
-#sobre-mi div {
+#sobre-mi>div {
     display: flex;
     align-self: center;
-    justify-content: space-around;
+    margin-bottom: 20px;
     width: 80%;
+    padding: 10px;
+    border-bottom: 1px dashed lightgray;
 }
 
-#sobre-mi>div {
-    margin-bottom: 20px;
+/* ----- personal ----- */
 
+
+#sobre-mi .foto-perfil {
+    /* hacer que la imagen no se distorcione al hacer zoom */
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+
+    background-image: url('../IMG/perfil-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100em;
 }
 
 .descripcion {
@@ -91,33 +132,85 @@ header a {
     align-items: flex-start;
     flex-direction: column;
     margin-left: 10px;
-
 }
 
 .descripcion p {
     align-self: flex-start;
 }
 
-
-#sobre-mi .foto-perfil {
-    /* hacer que la imagen no se distorcione al hacer zoom */
-    width: 25%;
-    background-image: url('../IMG/perfil-1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-}
-
-/* ----- estudios ----- */
-.estudios {
+/* ----- conocimientos ----- */
+.conocimientos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.estudios div {}
 
+.lado-lado {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lado-lado>div {
+    margin: 5px;
+    width: 30%;
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.conocimientos>div h3 {
+    text-align: center;
+    background-color: #4460ff;
+    border-bottom: 1px solid black;
+
+}
+
+.conocimientos>div p {
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.conocimientos>div p:last-child {
+    border-bottom: 0px solid black;
+}
+
+/* ----- lenguajes ----- */
+
+.lenguajes {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lado-lado2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
+
+.item img {
+    object-fit: cover;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+}
 
 /*-------------------- PROYECTOS --------------------*/
 
@@ -132,8 +225,6 @@ header a {
     justify-content: space-evenly;
     padding: 15px;
 }
-
-#contacto>div {}
 
 /* ----- formulario ----- */
 
